@@ -1,0 +1,20 @@
+ALGORITHM workshop_algoo
+VAR
+    nv,l:INTEGER=0
+    st:STRING
+    i:INTEGER=0
+    nw:INTEGER=1
+BEGIN
+    Read (st)
+    WHILE (st(i)<>'.') DO
+        i:=i+1
+        l++
+        IF (st[i]=' ']) THEN
+            nw:=nw+1
+        END_IF
+        IF (st[i]in ['a','A','e','E','i','I','u','U','o','O','y','Y']) THEN
+            nv:=nv+1
+        END_IF
+    END_WHILE
+    Write ("this is the number of  : words in this sentence , vowels & caracters :",nw,nv,l)
+END
